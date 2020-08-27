@@ -1,9 +1,9 @@
 const salas = require('../models/salas')
-const turnos = require('../models/turnos')
+
 
 module.exports = app => {
     app.get('/salas', (req, res) => {
-        turnos.buscarTodos(res)
+        salas.buscarTodos(res)
     })
 
     app.get('/salas/:id', (req, res) => {
